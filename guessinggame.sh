@@ -3,6 +3,7 @@ function call
 read val
 
 ans = $(ls -l|wc -l) 
+
 while [[$val -ne $ans]]
 do
 if [[val -gt $ans]]
@@ -12,6 +13,7 @@ else
    echo "Too low"
 fi
 done
+
 echo "Congratulations"
 
 }
